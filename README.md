@@ -16,7 +16,7 @@ A REST API for managing hotel rooms, guests, and bookings, built with Java and S
 
 - [x] Project scaffolded with Spring Initializr
 - [x] Database schema and API designed (this document)
-- [ ] Room CRUD
+- [x] Room CRUD
 - [ ] Guest CRUD
 - [ ] Booking creation with overlap check
 - [ ] Booking cancellation
