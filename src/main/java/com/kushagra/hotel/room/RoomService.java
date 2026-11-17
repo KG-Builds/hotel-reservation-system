@@ -1,5 +1,6 @@
 package com.kushagra.hotel.room;
 
+import java.time.LocalDate;
 import java.util.List;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
@@ -35,5 +36,12 @@ public class RoomService {
     public void delete(Long id) {
         findById(id);
         repository.deleteById(id);
+    }
+
+    public List<Room> findAvailable(LocalDate checkIn, LocalDate checkOut) {
+        if (!checkOut.isAfter(checkIn)) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "checkOut must be after checkIn");
+        }
+        return repository.findAvailable(checkIn, checkOut);
     }
 }
