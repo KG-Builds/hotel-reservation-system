@@ -17,10 +17,10 @@ A REST API for managing hotel rooms, guests, and bookings, built with Java and S
 - [x] Project scaffolded with Spring Initializr
 - [x] Database schema and API designed (this document)
 - [x] Room CRUD
-- [ ] Guest CRUD
-- [ ] Booking creation with overlap check
-- [ ] Booking cancellation
-- [ ] Available-room search
+- [x] Guest CRUD
+- [x] Booking creation with overlap check
+- [x] Booking cancellation
+- [x] Available-room search
 - [ ] Global exception handling (consistent error responses)
 - [ ] Switch from H2 to MySQL
 - [ ] Unit and integration tests
